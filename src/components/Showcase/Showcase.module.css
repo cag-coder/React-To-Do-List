@@ -1,0 +1,20 @@
+.Showcase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 100%;
+    color:white;
+    z-index: 100;
+}
+
+.Showcase h1{
+    font-size: 3rem;
+    
+}
+
+@media (max-width:768px){
+    .Showcase h1{
+        font-size: 2rem;
+    }
+}

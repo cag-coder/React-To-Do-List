@@ -1,0 +1,55 @@
+.ShowcaseName{
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center ;
+    width: 30%;
+    height: 40vh;
+    transition: all 0.7s ease-out;
+    z-index: 500;
+    background-color: #cab9a7;
+   
+}
+
+.ShowcaseName h1{
+    margin-bottom: 1rem;
+}
+
+.ShowcaseName input{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid white;
+    color: #000;
+    outline: none;
+    font-size: 1.4rem;
+}
+
+.ShowcaseName button{
+    padding: 1rem;
+    border:none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: black;
+    cursor: pointer;
+    
+}
+
+@media (max-width:768px){
+    .ShowcaseName{
+        padding: 1.5rem;
+        width: 50%;
+    }
+    .ShowcaseName h1{
+        font-size: 1.8rem;
+    }
+    .ShowcaseName input,
+    .ShowcaseName button{
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+}

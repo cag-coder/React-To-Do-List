@@ -1,0 +1,68 @@
+.TodoForm{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.TodoForm input{
+    padding: 1rem;
+    border: none;
+    font-size: 1.7rem;
+    outline:none;
+}
+
+.TodoForm button {
+    padding: 1rem;
+    border: none;
+    margin-left: 1rem;
+    background-color: black;
+    border: 2px solid #cab9a7;
+    cursor: pointer;
+    outline: none;
+}
+
+.TodoForm button:hover{
+    background-color: #cab9a7;
+ 
+}
+
+.TodoForm button:hover i{
+   color: black
+}
+
+.TodoForm button i{
+    font-size: 2rem;
+    padding: 1rem;
+    color: aliceblue;
+    align-items: center;
+}
+
+@media (max-width:768px){
+    .TodoForm input{
+        padding: 0.6rem;
+        font-size: 1.5rem;
+    }
+
+    .TodoForm button {
+        padding: 0.2rem;
+    }
+    
+}
+
+@media (max-width:576px){
+    .TodoForm input{
+        padding: 0.4rem;
+        font-size: 1.2rem;
+    }
+
+    .TodoForm button {
+        padding: 0rem;
+    }
+    .TodoForm button i{
+        font-size: 1rem;
+        padding: 1rem;
+        
+    }
+    
+}

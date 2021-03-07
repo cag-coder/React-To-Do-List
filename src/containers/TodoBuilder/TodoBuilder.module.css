@@ -1,0 +1,10 @@
+.TodoBuilder{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem;
+  
+    height: 70vh;
+    width: 100%;
+    overflow-y: auto;
+}
