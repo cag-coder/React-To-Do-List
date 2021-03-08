@@ -1,3 +1,7 @@
+# My first project with React.
+
+Still working on it. You can see it from https://react-to-do-list-plum.vercel.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
