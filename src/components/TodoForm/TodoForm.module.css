@@ -1,9 +1,9 @@
 .TodoForm{
     display: flex;
     justify-content: center;
-    text-align: center;
-    
-}
+    text-align: center;;
+}   
+
 
 .TodoForm input{
     padding: 1rem;
@@ -65,4 +65,18 @@
         
     }
     
+}
+
+@media (max-width:413px){
+
+    .TodoForm input{
+        padding: 0.4rem;
+        font-size: 0.9rem;
+    }
+
+    .TodoForm button i{
+        font-size: 1rem;
+        
+        
+    }
 }

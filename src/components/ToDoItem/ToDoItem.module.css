@@ -32,11 +32,9 @@
   
 }
 
-
 .ToDoItem p{
     margin-left: 1rem;
 }
-
 
 
 .Completed{
@@ -53,8 +51,14 @@
 
 @media (max-width:576px){
     .ToDoItem{
-        padding: 1rem;
-        font-size: 1.1rem;
-        width: 80%;
+        width:100%;
+        margin: 1rem auto;
+        font-size: 1rem;
+    }
+    
+    .ToDoItem button{
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+        
     }
 }
