@@ -5,7 +5,7 @@ import classes from "./ShowcaseName.module.css"
 
 const showcaseName= (props) =>(
     <Aux>
-        <Backdrop show={props.show} clicked={props.clicked}/>
+        <Backdrop show={props.show} clicked={props.nameHandle}/>
         <div className={classes.ShowcaseName}
         style={{
             transform: props.show ? "translate(-50%,-50%)" : "translate(-50%,-100vh)",

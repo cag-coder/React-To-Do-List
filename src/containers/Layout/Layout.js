@@ -22,20 +22,16 @@ class Layout extends Component{
         this.setState({show: personName, display:false})
     }
     
-    clickedHandler = () =>{
-        this.setState({display: false})
-    }
-
+    
     render(){
         return(
             <Aux>
                 <Showcase name={this.state.show}/>
-
                 <ShowcaseName 
                 change={this.inputNameHandler} 
                 nameHandle={this.changeNameHandler}
                 show={this.state.display}
-                clicked={this.clickedHandler} />
+                />
 
                 <main> {this.props.children}</main> 
             </Aux>

@@ -8,11 +8,11 @@
     text-align: center;
     justify-content: center ;
     width: 30%;
-    height: 40vh;
+    min-height: 40vh;
     transition: all 0.7s ease-out;
     z-index: 500;
     background-color: #cab9a7;
-   
+    
 }
 
 .ShowcaseName h1{
@@ -39,6 +39,25 @@
     
 }
 
+@media (max-width:1200px){
+    .ShowcaseName{
+        padding: 1.5rem;
+        width: 40%; 
+    }
+    .ShowcaseName h1{
+        font-size: 2rem;
+    }
+    .ShowcaseName input,
+    .ShowcaseName button{
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
+
+
+
+
+
 @media (max-width:768px){
     .ShowcaseName{
         padding: 1.5rem;
@@ -46,6 +65,22 @@
     }
     .ShowcaseName h1{
         font-size: 1.8rem;
+    }
+    .ShowcaseName input,
+    .ShowcaseName button{
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+}
+
+
+@media (max-width:576px){
+    .ShowcaseName{
+        padding: 1.5rem;
+        width: 80%;
+    }
+    .ShowcaseName h1{
+        font-size: 1.6rem;
     }
     .ShowcaseName input,
     .ShowcaseName button{

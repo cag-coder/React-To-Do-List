@@ -10,7 +10,6 @@ class TodoBuilder extends Component{
 
     formSubmitHandler = (e) =>{
         e.preventDefault()
-       
     }
 
     inputHandler= (e)=>{
@@ -23,7 +22,7 @@ class TodoBuilder extends Component{
             const toDoItem ={
                 id: Math.floor(Math.random()*10000),
                 text: this.state.input,
-                done: false
+                finished: false
             }
 
             const newTodo= [...this.state.toDo, toDoItem]
@@ -31,18 +30,36 @@ class TodoBuilder extends Component{
         }
     }
 
+    deleteToDoHandler=(id)=>{
+        const toDo= [...this.state.toDo]
+        const newTodo= toDo.filter(item => item.id !== id)
+        this.setState({toDo: newTodo})
+    }
+
+    completedToDoHandler = (id) =>{
+        const element = this.state.toDo.findIndex(el => el.id === id )
+        const toDo= [...this.state.toDo]
+        toDo[element] ={
+            ...toDo[element],
+            finished:true
+        }
+        this.setState({toDo : toDo})
+   
+    }
+
     render(){
         
-        let toDoItems= "adamsin sen"
-        if (this.state.toDo !== []){
-            toDoItems=this.state.toDo.map(item =>{
+    
+        const toDoItems=this.state.toDo.map(item =>{
                 return <li key={item.id}>
                 <ToDoItem    
                     text={item.text}
+                    delete={() => this.deleteToDoHandler(item.id)}
+                    complete ={() => this.completedToDoHandler(item.id)}
+                    finished = {item.finished}
                     />
                 </li>
             })
-        }
        
         return(
             <div className={classes.TodoBuilder}>

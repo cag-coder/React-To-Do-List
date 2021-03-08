@@ -1,12 +1,46 @@
 .ToDoItem{
-    width: 40%;
+    width: 50%;
     margin: 2rem auto;
-    padding: 1rem;
     background-color: aliceblue;
     color:black;
     text-align: left;
     font-size: 2rem;
-    border: 3px solid #cab9a7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.ToDoItem button{
+    padding: 1rem 1.5rem;
+    font-size: 1.9rem;
+    margin-left: 0.2rem;
+    border: none;
+    background-color: aliceblue;
+    outline: none;
+    cursor: pointer;
+}
+
+.ToDoItem button:hover{
+    background-color: cadetblue;
+}
+
+.ToDoItem button.active{
+    background-color: cadetblue;    
+  
+}
+
+
+.ToDoItem p{
+    margin-left: 1rem;
+}
+
+
+
+.Completed{
+   text-decoration: line-through;
 }
 
 @media (max-width:768px){
