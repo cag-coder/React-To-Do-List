@@ -38,13 +38,14 @@ class TodoBuilder extends Component{
 
     completedToDoHandler = (id) =>{
         const element = this.state.toDo.findIndex(el => el.id === id )
+        
         const toDo= [...this.state.toDo]
         toDo[element] ={
             ...toDo[element],
-            finished:true
+            finished:!toDo[element].finished
         }
         this.setState({toDo : toDo})
-   
+       g
     }
 
     render(){

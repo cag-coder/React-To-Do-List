@@ -41,11 +41,26 @@
    text-decoration: line-through;
 }
 
+
+
+@media (max-width:992px){
+    .ToDoItem{
+        width:80%;
+    }
+    
+    .ToDoItem button{
+    
+        font-size: 1.6rem;
+        
+    }
+}
+
+
 @media (max-width:768px){
     .ToDoItem{
         padding: 1rem;
         font-size: 1.1rem;
-        width: 60%;
+        width: 70%;
     }
 }
 
