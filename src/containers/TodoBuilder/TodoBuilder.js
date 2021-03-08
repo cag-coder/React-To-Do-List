@@ -45,7 +45,7 @@ class TodoBuilder extends Component{
             finished:!toDo[element].finished
         }
         this.setState({toDo : toDo})
-       g
+       
     }
 
     render(){
